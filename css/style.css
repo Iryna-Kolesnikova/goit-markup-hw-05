@@ -359,8 +359,8 @@ button {
   border-radius: 4px;
   padding: 12px 24px;
   border: 1px solid var(--last-color);
-  transition: box-shadow, color, border-color,
-    background-color var(--timing-funktion);
+  transition: box-shadow var(--timing-funktion), color var(--timing-funktion),
+    border-color var(--timing-funktion), background-color var(--timing-funktion);
 }
 
 .btn-portfolio:hover,
@@ -429,7 +429,6 @@ button {
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow: scroll;
   transform: translate(0, 100%);
   transition: transform var(--timing-funktion);
 
@@ -438,8 +437,9 @@ button {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--btn-color);
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px 0;
   top: 0;
+  left: 0;
 }
 
 /* ===========================CUSTOMERS========================== */
@@ -563,8 +563,9 @@ button {
   z-index: 100;
   width: 100%;
   height: 100%;
+  opacity: 1;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity, visibility var(--timing-funktion);
+  transition: opacity var(--timing-funktion), visibility var(--timing-funktion);
 }
 
 .backdrop-it.is-hidden {
